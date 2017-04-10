@@ -1,11 +1,11 @@
-function factorial(num) {
-  if (num < 0 || isNaN(num)) {
+function factorialRecursive(num) {
+  if (num < 0 || isNaN(num) || num % 1 != 0) {
     return false
-  } else if (0 <= num <= 1) {
+  } else if (num <= 1) {
     return 1;
   } else {
-    return num * (num -1);
+    return factorialRecursive(num - 1) * num;
   }
 }
 
-exports.factorial = factorial;
+module.exports = factorialRecursive;
