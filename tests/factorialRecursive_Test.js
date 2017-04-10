@@ -2,7 +2,7 @@ var mocha = require('mocha');
 var expect = require('chai').expect;
 var factorialRecursive = require('../src/factorialRecursive.js');
 
-describe.only('factorialRecursive()', function() {
+describe('factorialRecursive()', function() {
 
   it('should be a function', function() {
     expect(factorialRecursive).to.be.a('function')
