@@ -1,0 +1,23 @@
+{
+  "name": "158-core-algorithms-basic",
+  "version": "1.0.0",
+  "description": "Classic, Numeric, and Set Operations",
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zezecodez/158-core-algorithms-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zezecodez/158-core-algorithms-basic/issues"
+  },
+  "homepage": "https://github.com/zezecodez/158-core-algorithms-basic#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
