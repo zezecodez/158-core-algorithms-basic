@@ -18,7 +18,7 @@ This is a sub-goal of [Core Algorithms][core-algos].
 
 # Completed Specs
 [ ] makeChange
-[ ] fizzBuzz
+[X] fizzBuzz
 [ ] isPalindrome
 [X] factorial
 [ ] fibonacci
