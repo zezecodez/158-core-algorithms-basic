@@ -3,7 +3,7 @@ var expect = require('chai').expect;
 var fizzBuzzLoop = require('../src/fizzBuzzLoop.js');
 
 
-describe.only('fizzBuzzLoop()', function() {
+describe('fizzBuzzLoop()', function() {
 
   it('it is a function', function() {
     expect(fizzBuzzLoop).to.be.a('function');
