@@ -1,3 +1,5 @@
+'use strict';
+
 function factorialRecursive(num) {
   if (num < 0 || isNaN(num) || num % 1 != 0) {
     return false

@@ -1,3 +1,4 @@
+'use strict';
 
 function factorialLoop(num) {
   var results = 1;
