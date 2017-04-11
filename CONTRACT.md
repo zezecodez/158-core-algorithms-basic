@@ -19,7 +19,7 @@ This is a sub-goal of [Core Algorithms][core-algos].
 # Completed Specs
 [ ] makeChange
 [X] fizzBuzz
-[ ] isPalindrome
+[X] isPalindrome
 [X] factorial
 [ ] fibonacci
 [ ] collatzConjecture
