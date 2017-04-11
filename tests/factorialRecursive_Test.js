@@ -14,10 +14,24 @@ describe('factorialRecursive()', function() {
     expect(factorialRecursive(4)).to.equal(24);
   });
 
-  it('should return false if parameter is less than 0, NAN, or not a whole mumber', function() {
+  it('should return false if parameter is negative number', function() {
     expect(factorialRecursive(-1)).to.equal(false);
-    expect(factorialRecursive('yeeeee!')).to.equal(false);
+    expect(factorialRecursive(-15)).to.equal(false);
+    expect(factorialRecursive(-100)).to.equal(false);
+  });
+
+  it('should return false if parameter is NAN', function() {
+    expect(factorialRecursive('oh yeeeee!')).to.equal(false);
+    expect(factorialRecursive('all day!!')).to.equal(false);
+  });
+
+  it('should return false if parameter is a float/decimal/!integer', function() {
     expect(factorialRecursive(3.333)).to.equal(false);
+    expect(factorialRecursive(0.333)).to.equal(false);
+  });
+
+  it('should return false if parameter is a float/decimal/!integer', function() {
+    expect(factorialRecursive()).to.equal(false);
   });
 
 });

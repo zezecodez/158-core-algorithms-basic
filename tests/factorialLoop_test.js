@@ -14,10 +14,24 @@ describe('factorialLoop()', function() {
     expect(factorialLoop(4)).to.equal(24);
   });
 
-  it('should return false if parameter is < 0 or NAN', function() {
+  it('should return false if parameter is negative number', function() {
     expect(factorialLoop(-1)).to.equal(false);
+    expect(factorialLoop(-15)).to.equal(false);
+    expect(factorialLoop(-100)).to.equal(false);
+  });
+
+  it('should return false if parameter is NAN', function() {
     expect(factorialLoop('oh yeeeee!')).to.equal(false);
+    expect(factorialLoop('all day!!')).to.equal(false);
+  });
+
+  it('should return false if parameter is a float/decimal/!integer', function() {
     expect(factorialLoop(3.333)).to.equal(false);
+    expect(factorialLoop(0.333)).to.equal(false);
+  });
+
+  it('should return false if parameter is a float/decimal/!integer', function() {
+    expect(factorialLoop()).to.equal(false);
   });
 
 });
