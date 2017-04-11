@@ -20,7 +20,7 @@ This is a sub-goal of [Core Algorithms][core-algos].
 [ ] makeChange
 [ ] fizzBuzz
 [ ] isPalindrome
-[ ] factorial
+[X] factorial
 [ ] fibonacci
 [ ] collatzConjecture
 [ ] setUnion
