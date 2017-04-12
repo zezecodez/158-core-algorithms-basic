@@ -17,7 +17,7 @@ redirect_from: "/goals/158"
 This is a sub-goal of [Core Algorithms][core-algos].
 
 # Completed Specs
-[ ] makeChange
+[X] makeChange
 [X] fizzBuzz
 [X] isPalindrome
 [X] factorial
