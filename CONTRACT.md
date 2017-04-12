@@ -17,16 +17,25 @@ redirect_from: "/goals/158"
 This is a sub-goal of [Core Algorithms][core-algos].
 
 # Completed Specs
-[X] makeChange
-[X] fizzBuzz
-[X] isPalindrome
-[X] factorial
-[ ] fibonacci
-[ ] collatzConjecture
-[ ] setUnion
-[ ] setIntersection
-[ ] setCompliment
-[ ] setSymmetricDifference
+[X] -makeChange
+
+[X] -fizzBuzz
+
+[X] -isPalindrome
+
+[X] -factorial
+
+[ ] -fibonacci
+
+[ ] -collatzConjecture
+
+[ ] -setUnion
+
+[ ] -setIntersection
+
+[ ] -setCompliment
+
+[ ] -setSymmetricDifference
 
 ## Classic
 
