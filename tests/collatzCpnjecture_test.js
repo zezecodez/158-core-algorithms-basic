@@ -2,7 +2,7 @@ var mocha = require('mocha');
 var expect = require('chai').expect;
 var collatzConjecture = require('../src/collatzConjecture.js');
 
-describe.only('collatzConjecture()', function() {
+describe('collatzConjecture()', function() {
 
   it('should be a function', function() {
     expect(collatzConjecture).to.be.a('function');
