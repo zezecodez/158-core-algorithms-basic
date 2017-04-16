@@ -2,7 +2,7 @@ var mocha = require('mocha');
 var expect = require('chai').expect;
 var setSymDiff = require('../src/setSymmetricDiff.js');
 
-describe.only('setSymDiff()', function() {
+describe('setSymDiff()', function() {
 
   it('should be a function', function() {
     expect(setSymDiff).to.be.a('function');
