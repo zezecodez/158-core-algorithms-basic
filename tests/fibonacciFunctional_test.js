@@ -13,15 +13,15 @@ describe('fibonacci()', function() {
   });
 
   it('return message if parameter is a negative number', function() {
-    expect(fibonacci('yolo solo manolo')).to.equal('please insert a single, positive integer as the parameter');
+    expect(fibonacci(-10)).to.equal('please insert a single, positive integer as the parameter');
   });
 
-  it('return message if parameter is not an integer', function() {
-    expect(fibonacci('yolo solo manolo')).to.equal('please insert a single, positive integer as the parameter');
+  it('return message if parameter is not an integer (it\'s a float)', function() {
+    expect(fibonacci(0.2)).to.equal('please insert a single, positive integer as the parameter');
   });
 
   it('return message if no parameter is passed through function', function() {
-    expect(fibonacci('yolo solo manolo')).to.equal('please insert a single, positive integer as the parameter');
+    expect(fibonacci()).to.equal('please insert a single, positive integer as the parameter');
   });
 
   it('returns fibonacci sequence in array from 0 to nth number', function() {
@@ -29,6 +29,5 @@ describe('fibonacci()', function() {
     expect(fibonacci(3)).to.deep.equal([0, 1, 1]);
     expect(fibonacci(12)).to.deep.equal([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]);
   });
-
 
 });
