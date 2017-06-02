@@ -1,172 +1,53 @@
 ---
 authors:
 - "tannerwelsh"
-goal_id: 158
+goal_id: 159
 team_size: 1
-title: Core Algorithms [Classic, Numeric, and Set]
+title: "Core Algorithms [Sorting, Searching, Graphing, Geometry]"
 created_at: '2016-12-31T16:12:46Z'
 labels:
 - core
 published: true
 level: '1'
-redirect_from: "/goals/158"
+redirect_from: "/goals/159"
 ---
 
-# Core Algorithms [Classic, Numeric, and Set]
+# Core Algorithms [Sorting, Searching, Graphing, Geometry]
 
-This is a sub-goal of [Core Algorithms][core-algos].
+## Challenge Rating
 
-# Completed Specs
-## 10 out of 10 
+This goal will likely be within your ZPD if you...
 
-[X] -makeChange
+- Can write programs and tests using Node.js and npm
+- Can use problem decomposition to split difficult problems into smaller parts
+- Have used pseudocode as an intermediary step in writing a program
+- Are interested in common computer science algorithms
+- Are interested in critical thinking and problem solving
 
-[X] -fizzBuzz
+## Description
 
-[X] -isPalindrome
+This is a sub-goal of [Core Algorithms][core-algos]. Reference that goal for more description, context, and resources.
 
-[X] -factorial
+Complete **ONLY** the [Sorting and Searching](https://github.com/GuildCrafts/core-algorithms/blob/master/algorithms.md#sorting-and-searching) and [Graphing and Geometry](https://github.com/GuildCrafts/core-algorithms/blob/master/algorithms.md#graphing-and-geometry) algorithms, not the Classic, Numeric, or Set Operations. That's a [separate goal][core-algos-basic]. :)
 
-[X] -fibonacci
+## Specifications
 
-[X] -collatzConjecture
-
-[X] -setUnion
-
-[X] -setIntersection
-
-[X] -setCompliment
-
-[X] -setSymmetricDifference
-
-## Classic
-
-#### makeChange
-
-Given a price and an amount paid, return the number of coins in each denomination that should be given as change.
-
-_Note: because JavaScript is [bad at decimal math](http://adripofjavascript.com/blog/drips/avoiding-problems-with-decimal-math-in-javascript.html), the inputs are given as integers that represent dollar + cent amounts, so `139` = $1.39._
-
-```javascript
-makeChange({ price: 100, amountGiven: 100 })
-// => { quarters: 0, dimes: 0, nickels: 0, pennies: 0 }
-
-makeChange({ price: 159, amountGiven: 200 })
-// => { quarters: 1, dimes: 1, nickels: 1, pennies: 1 }
-
-makeChange({ price: 432, amountGiven: 500 })
-// => { quarters: 2, dimes: 1, nickels: 1, pennies: 3 }
-```
-
-#### fizzBuzz
-
-Return an array of numbers from 1 to 100.
-
-For multiples of three, use the string `Fizz` instead of the number and for multiples of five replace with `Buzz`.
-
-For numbers which are multiples of both three and five replace with `FizzBuzz`.
-
-```javascript
-fizzBuzz()
-// => [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', ...]
-```
-
-#### isPalindrome
-
-Determine if a string is a palindrome. Return `true` or `false`.
-
-Ignore punctuation, spacing, and case sensitivity.
-
-```javascript
-isPalindrome('radar')
-// => true
-
-isPalindrome('bananas')
-// => false
-
-isPalindrome('A man, a plan, a canal: Panama')
-// => true
-```
-
-## Numeric
-
-#### factorial
-
-Return the factorial of a number.
-
-```javascript
-factorial(5)
-// => 120
-```
-
-#### fibonacci
-
-Return an array of Fibonacci numbers to the _nth_ position.
-
-```javascript
-fibonacci(10)
-// => [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
-```
-
-#### collatzConjecture
-
-Return the Collatz sequence for a given number.
-
-The Collatz sequence for any positive integer `n` is defined as follows:
-
-> If `n` is even, divide it by 2 to get `n / 2`. If `n` is odd, multiply it by 3 and add 1 to obtain `3n + 1`. Repeat the process until you reach 1.
-
-```javascript
-collatzConjecture(1)
-// => [1]
-
-collatzConjecture(7)
-// => [7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1]
-```
-
-
-## Set Operations
-
-#### setUnion
-
-Return the union of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setUnion(a, b)
-// => [1, 2, 3, 4, 6, 8]
-```
-
-#### setIntersection
-
-Return the intersection of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setIntersection(a, b)
-// => [2, 4]
-```
-
-#### setCompliment
-
-Return the compliment of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setCompliment(a, b)
-// => [6, 8]
-```
-
-#### setSymmetricDifference
-
-Return the symmetric difference of two sets.
-
-```javascript
-const a = [1, 2, 3, 4]
-const b = [2, 4, 6, 8]
-setSymmetricDifference(a, b)
-// => [1, 3, 6, 8]
-```
+- [X] Artifact produced is a fork of the [core-algorithms][core-algorithms] repo.
+- [X] Can run all tests with `npm test`.
+- [X] `binarySearch()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [X] Tests for `binarySearch()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [X] `bubbleSort()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [X] Tests for `bubbleSort()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [X] `mergeSort()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [X] Tests for `mergeSort()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [ ] `closestPair()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [ ] Tests for `closestPair()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [ ] `isConnectedGraph()` algorithm is implemented according to the description in [algorithms.md][algorithms-list].
+- [ ] Tests for `isConnectedGraph()` exist with at least 2 unit tests using valid inputs, and at least 1 unit test using invalid inputs.
+- [X] Repository includes a README file with basic installation and setup instructions.
+- [X] All package dependencies are properly declared in `package.json`.
+- [X] All major features are added via pull requests with a clear description and concise commit messages.
+- [ ] Code uses a linter and there are no linting errors.
+- [X] Variables, functions, files, etc. have appropriate and meaningful names.
+- [X] Functions are small and serve a single purpose.
+- [X] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
